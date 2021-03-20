@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "books-a3173": {
+      "hosting": {
+        "app": [
+          "books-a3173"
+        ]
+      }
+    }
+  }
+}
