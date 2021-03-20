@@ -1,0 +1,49 @@
+.header {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  height: 64px;
+  display: flex;
+  align-items: center;
+  color: #426696;
+  ion-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+}
+.container {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  height: 100vh;
+  overflow: auto;
+}
+
+ion-card {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
+
+ion-card-header {
+  display: flex;
+
+  .cover {
+    height: 120px;
+    width: 80px;
+  }
+
+  .title {
+    padding-left: 16px;
+    margin: auto 0;
+
+    ion-card-title {
+      color: #426696;
+      font-weight: 600;
+    }
+    ion-card-subtitle {
+      padding-top: 10px;
+      color: #426696;
+      font-weight: 500;
+    }
+
+    ion-datetime {
+      padding-left: 0;
+    }
+  }
+}
