@@ -1,11 +1,20 @@
 <ion-content>
   <div class="container">
-      <div class="header">
-        <ion-buttons slot="start">
-          <ion-menu-button></ion-menu-button>
-          <ion-title>Search</ion-title>
-        </ion-buttons>
-      </div>
-      <ion-searchbar placeholder="Search books"></ion-searchbar>
+    <div class="header">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+        <ion-title>Search</ion-title>
+      </ion-buttons>
+    </div>
+    <ion-searchbar placeholder="Search books" (search)="search($event.target.value)"></ion-searchbar>
+    <ion-card *ngFor="let book of books">
+      <ion-card-header>
+        <img class="cover" src="{{book.volumeInfo.imageLinks.thumbnail}}" alt="">
+        <div class="title">
+          <ion-card-title>{{book.volumeInfo.title}}</ion-card-title>
+          <ion-card-subtitle>{{book.volumeInfo.authors}}</ion-card-subtitle>
+        </div>
+      </ion-card-header>
+    </ion-card>
   </div>
 </ion-content>

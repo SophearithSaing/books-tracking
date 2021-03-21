@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Book } from '../interfaces/book';
 
 @Component({
   selector: 'app-books',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BooksPage implements OnInit {
 
+  books: Array<Book>;
 
   constructor() {}
 

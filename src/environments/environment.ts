@@ -4,13 +4,15 @@
 
 export const environment = {
   production: false,
+  apiUrl: 'https://www.googleapis.com/books/v1/volumes',
+  apiKey: 'AIzaSyBlo7SOulKQegfEp0859uMefuQwJfdAwqc',
   firebaseConfig: {
-    apiKey: "AIzaSyCW4pY6Y9yaDEm2GV8yk2Eal2ItbRMMhg4",
-    authDomain: "books-a3173.firebaseapp.com",
-    projectId: "books-a3173",
-    storageBucket: "books-a3173.appspot.com",
-    messagingSenderId: "762344242526",
-    appId: "1:762344242526:web:b75bdb3c40b14e16a963cf"
+    apiKey: 'AIzaSyCW4pY6Y9yaDEm2GV8yk2Eal2ItbRMMhg4',
+    authDomain: 'books-a3173.firebaseapp.com',
+    projectId: 'books-a3173',
+    storageBucket: 'books-a3173.appspot.com',
+    messagingSenderId: '762344242526',
+    appId: '1:762344242526:web:b75bdb3c40b14e16a963cf'
   }
 };
 
